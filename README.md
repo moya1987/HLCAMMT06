@@ -2,7 +2,7 @@ HLC TO06 AMM
 
 # Dominio
 
-http://moya1987.es/alumnoAMM
+http://moya1987.es/alumnosAMM
 
 # Características del alojamiento usado
 
@@ -16,8 +16,8 @@ Droplet con LEMP preinstalado 2 CPUs & 2 GB RAM & 60 GB SSD
 3. sudo wget https://github.com/moya1987/HLCAMMT06/archive/refs/heads/main.zip
 5. sudo unzip main.zip
 6. sudo rm main.zip
-7. sudo mv HLCAMMT06-main alumnoAMM
-8. sudo chown -R www-data:www-data alumnoAMM
+7. sudo mv HLCAMMT06-main alumnosAMM
+8. sudo chown -R www-data:www-data alumnosAMM
 9. Pasamos a la parte de la base de datos. Para ello en la carpeta data tenemos el fichero migracion sql. Podemos ejecutar el script en mysql o ejecutarlo manualmente:
 
 CREATE DATABASE alumnosAMM;
@@ -68,13 +68,13 @@ return [
 
 11. Creamos el usuario 'alumnomaster' con la contraseña '1234'. Seguimos estos pasos:
 CREATE USER 'alumnomaster'@'localhost' IDENTIFIED BY '1234';
-GRANT ALL PRIVILEGES ON alumnoAMM.* TO 'alumnomaster'@'localhost';
+GRANT ALL PRIVILEGES ON alumnosAMM.* TO 'alumnomaster'@'localhost';
 
 .
 
 
 
-12. Accedemos al moya1987.es/alumnoAMM
+12. Accedemos al moya1987.es/alumnosAMM
 
 
 .
